@@ -52,7 +52,7 @@ public class SampleAtmosphereApplication {
 				new AtmosphereServlet(), "/chat/*");
 		registration.addInitParameter("org.atmosphere.cpr.packages", "sample");
 		registration.addInitParameter("org.atmosphere.interceptor.HeartbeatInterceptor"
-				+ ".clientHeartbeatFrequencyInSeconds", "10");
+				+ ".clientHeartbeatFrequencyInSeconds", "11");
 		registration.setLoadOnStartup(0);
 		// Need to occur before the EmbeddedAtmosphereInitializer
 		registration.setOrder(Ordered.HIGHEST_PRECEDENCE);
